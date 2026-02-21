@@ -110,7 +110,7 @@ function App() {
         <h1 className=' text-6xl md:text-7xl text-amber-100 font-["Playwrite_AT"] border-r-[3px] mb-8 border-r-[white]'>
           Just do It.
         </h1>
-        <div className="flex flex-col w-full justify-center sm:w-full sm:max-w-xl md:max-w-2xl gap-1.5 text-center mb-7 mx-auto ">
+        <div className="flex flex-col w-full justify-center sm:w-full sm:max-w-xl md:max-w-2xl gap-1 text-center mb-7 mx-auto ">
           <Input
             onChange={onChange}
             isCheckOnly={onlyChecks}
