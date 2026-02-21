@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+@utility btns {
+  @apply flex items-center justify-center cursor-pointer hover:bg-zinc-200 active:bg-zinc-200 text-2xl rounded-full bg-white w-9 py-1.5 text-black font-bold;
+  box-shadow: 0.5px 0.5px 6px 2px rgba(255, 255, 255, 0.5);
+}
+
+@layer base {
+  * {
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+    
+  }
+}
+
+@utility scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #3282b8 transparent;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #3282b8, #0f4c75);
+    border-radius: 999px;
+    box-shadow: 0 0 6px rgba(100, 130, 184, 0.5);
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #5dade2, #3282b8);
+  }
+}
