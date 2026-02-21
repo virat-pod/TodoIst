@@ -17,9 +17,9 @@ function App() {
   };
 
   useEffect(() => {
-    let saveTodos = JSON.parse(localStorage.getItem("todos"));
-    setTodos(saveTodos);
-  }, []);
+  let saveTodos = JSON.parse(localStorage.getItem("todos")) || [];
+  setTodos(saveTodos);
+}, []);
 
   const dateGet = (which) => {
     const now = currentTime;
@@ -73,7 +73,7 @@ function App() {
         todo.time = DateTime.now().toFormat("hh:mm a");
       }
       setTodos(newTodo);
-      saveTodo(todos);
+      saveTodo(newTodo);
     }
   };
 
