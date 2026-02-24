@@ -43,7 +43,7 @@ As they say, the more you practice, the better you get — and this project is p
 Clone the repository:
 
 ```bash
-git clone <your-repo-link>
-cd <project-folder>
+git clone <https://GitHub.com/virat-pod/TodoIst>
+cd <project-folder/ - 'TodoIst'>
 npm install
 npm run dev
